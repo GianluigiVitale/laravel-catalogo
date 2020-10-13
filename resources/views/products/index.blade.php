@@ -24,7 +24,7 @@
                             <td>{{$product->name}}</td>
                             <td>{{$product->description}}</td>
                             <td>{{$product->price}}</td>
-                            <img src="{{$product->img}}">
+                            <img class="img-fluid" src="{{asset('storage/'. $product->img)}}" alt="{{$product->name}}">
                             <td><a href="{{route('products.edit', $product->id)}}">Modifica</a></td>
                             <td><a href="{{route('products.show', $product->slug)}}">Visualizza</a></td>
                             <td>
